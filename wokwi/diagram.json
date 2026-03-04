@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "RFID Attendance",
+  "devices": [
+    { "type": "esp32-devkit-v1", "id": "esp" },
+    { "type": "rc522", "id": "rfid" }
+  ],
+  "connections": [
+    ["rfid:SDA","esp:5"],
+    ["rfid:SCK","esp:18"],
+    ["rfid:MOSI","esp:23"],
+    ["rfid:MISO","esp:19"],
+    ["rfid:RST","esp:22"],
+    ["rfid:3.3V","esp:3V3"],
+    ["rfid:GND","esp:GND"]
+  ]
+}
